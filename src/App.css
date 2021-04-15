@@ -1,38 +1,104 @@
 .App {
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chart {
+  margin-top: 50px;
+  max-width: 1113px;
+  width: 100%;
+  margin: 0px auto;
+  background: #FFFFFF;
+  border-radius: 0px 12px 12px 0px;
+  padding: 30px 92px 64px 49px;
+  border: 1px solid black;
+  border-radius: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chart .header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-self: top;
+  justify-content: space-between;
+  padding-right: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.chart .header h2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px; 
+  color: #11263C;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chart .header .headeritems {
+  display: flex;
+  gap: 24px; 
 }
+
+.chart .header .headeritems span {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px; 
+  color: #D0D1D2;
+}
+
+
+
+.arrow_box { 
+  width: 78px;
+  background-color: black;
+  color: #000000;
+  text-align: start;
+  border-radius: 6px;
+  padding: 14px;
+  position: relative;
+  z-index: 1;  
+  background-color: #ffffff;
+  display: grid;
+  box-shadow: 0px 8px 8px rgba(50, 50, 71, 0.08), 0px 8px 16px rgba(50, 50, 71, 0.06);
+}
+
+.arrow_box span {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: start;
+  color: #11263C;
+}
+
+.arrow_box span:first-child {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+  color: rgba(60, 60, 67, 0.6);
+}
+
+.arrow_box span:last-child {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px; 
+  color: rgba(60, 60, 67, 0.6);
+} 
+
+.arrow_box::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+ 
